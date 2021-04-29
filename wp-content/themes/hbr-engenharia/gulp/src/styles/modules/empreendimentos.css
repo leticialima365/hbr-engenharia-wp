@@ -1,0 +1,43 @@
+ .p-empreendimentos{
+    .box-text{
+        padding:7.5rem 0 16rem;
+
+    }
+    .banner-topo-page{
+        .title-box{
+            @mixin atSmall{font-size: 4.2rem;}
+            @mixin atMobile{font-size: 3.6rem;}
+        }
+    }
+    .flex-cards{
+        .item-card{
+            height: 39.4rem;
+            @mixin atMobile{
+                height: auto;
+                info{
+                    height: auto;
+                }
+            }
+            .info{
+                height: 12.8rem;
+                @mixin atMobile{
+                    height: auto;
+                }
+            }
+        }
+    }
+    .box-cards-info{
+        margin-top: 12rem;
+    }
+    .c-button{
+        border:1px solid $blue;
+        &.active{
+            background: $blue;
+            color: #fff;
+        }
+    }
+}
+.box-cards-info{
+    background: #3D5467;
+    padding-bottom: 5.8rem;
+}
